@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Effective Mobile_test</string>
+    <string name="login">Вход</string>
+    <string name="email">Email</string>
+    <string name="exampleEmail">example@gmail.com</string>
+    <string name="password">Пароль</string>
+    <string name="enterPassword">Введите пароль</string>
+    <string name="noAccount">Нету аккаунта?\n</string>
+    <string name="registration"> Регистрация\n</string>
+    <string name="forgetPassword">Забыл пароль</string>
+
+    <string name="favorite">Избранное</string>
+    <string name="searchCourses" tools:ignore="TypographyEllipsis">Search courses...</string>
+    <string name="sortText">По дате добавления</string>
+
+    <string name="profile">Профиль</string>
+    <string name="more">Подробнее</string>
+
+    <string name="main">Главная</string>
+    <string name="account">Аккаунт</string>
+
+
+</resources>

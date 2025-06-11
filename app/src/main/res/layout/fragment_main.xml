@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+
+        android:layout_height="56dp"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginTop="56dp"
+
+        android:background="@drawable/edit_text_main"
+        android:drawableStart="@drawable/search"
+        android:drawablePadding="8dp"
+
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxHeight="720dp"
+        android:minHeight="264dp"
+
+        android:hint="@string/searchCourses"
+        android:textColorHint="#50F2F2F3"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:lineHeight="18dp"
+        android:letterSpacing="0.009"
+
+        android:paddingStart="@dimen/margin12"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor,RtlSymmetry"
+        android:layout_marginEnd="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="56dp"
+
+        android:layout_height="56dp"
+
+        android:layout_marginEnd="@dimen/margin16"
+        android:background="@drawable/edit_text_main"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:src="@drawable/funnel" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sortLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin16"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/sortText"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            android:textFontWeight="500"
+            android:lineHeight="18dp"
+            android:letterSpacing="0.009" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="4dp"
+
+            android:importantForAccessibility="no"
+            android:src="@drawable/sort_icon"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listCourses"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="@dimen/margin16"
+
+        android:paddingLeft="@dimen/margin16"
+        android:paddingRight="@dimen/margin16"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sortLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

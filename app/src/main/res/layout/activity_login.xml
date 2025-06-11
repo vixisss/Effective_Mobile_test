@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_login"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin16"
+
+        android:fontFamily="sans-serif"
+
+        android:letterSpacing="0"
+        android:lineHeight="36dp"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textFontWeight="400"
+        android:textSize="28sp"
+
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/margin28"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/margin16"
+
+        android:paddingEnd="@dimen/margin16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_login">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:letterSpacing="0.006"
+            android:lineHeight="18dp"
+            android:text="@string/email"
+            android:textColor="@color/white"
+            android:textFontWeight="500"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin8"
+            android:background="@drawable/edit_text"
+            android:backgroundTint="@color/light_gray"
+
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+
+            android:hint="@string/exampleEmail"
+            android:letterSpacing="0.018"
+            android:lineHeight="20dp"
+            android:paddingStart="@dimen/margin16"
+            android:paddingEnd="@dimen/margin16"
+
+            android:textColor="@color/white"
+            android:textColorHint="@color/whiteOpacity"
+            android:textFontWeight="400"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/margin16"
+
+
+            android:letterSpacing="0.006"
+            android:lineHeight="18dp"
+            android:text="@string/password"
+            android:textColor="@color/white"
+            android:textFontWeight="500"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin8"
+            android:background="@drawable/edit_text"
+            android:backgroundTint="@color/light_gray"
+
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+
+            android:hint="@string/enterPassword"
+            android:letterSpacing="0.018"
+            android:lineHeight="20dp"
+            android:paddingStart="@dimen/margin16"
+            android:paddingEnd="@dimen/margin16"
+
+            android:textColor="@color/white"
+            android:textColorHint="@color/whiteOpacity"
+            android:textFontWeight="400"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin24"
+        android:layout_marginEnd="@dimen/margin16"
+
+        android:enabled="false"
+
+        android:backgroundTint="@color/green"
+        android:gravity="center"
+        android:letterSpacing="0.007"
+
+        android:lineHeight="20dp"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/registrationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/noAccount"
+            android:textColor="@color/white"
+            android:textFontWeight="600"
+
+            android:textSize="12sp"
+            android:lineHeight="15dp"
+            android:letterSpacing="0.03" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/registration"
+            android:textColor="@color/green"
+            android:textFontWeight="600"
+
+            android:textSize="12sp"
+            android:lineHeight="15dp"
+            android:letterSpacing="0.03" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/passwordForgetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:letterSpacing="0.03"
+        android:lineHeight="15dp"
+        android:text="@string/forgetPassword"
+        android:textColor="@color/green"
+        android:textFontWeight="600"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationLayout" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginEnd="@dimen/margin16"
+        android:layout_marginTop="32dp"
+
+        android:background="@color/stroke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordForgetText">
+
+    </View>
+
+    <LinearLayout
+        android:id="@+id/socialLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginEnd="@dimen/margin16"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:layout_marginTop="32dp">
+
+        <ImageButton
+            android:id="@+id/vkBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="@dimen/margin8"
+            android:layout_weight="1"
+            android:background="@drawable/mates_btn"
+            android:backgroundTint="@color/vk"
+            android:src="@drawable/vk_icon"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/matesBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/margin8"
+            android:layout_weight="1"
+            android:background="@drawable/mates_btn"
+            android:src="@drawable/mates_icon"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
