@@ -42,6 +42,3 @@
 - MVVM
 - AdapterDelegates
 - Clean Architecture
-
-
-
